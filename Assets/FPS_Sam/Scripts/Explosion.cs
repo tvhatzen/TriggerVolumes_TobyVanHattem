@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Explode : MonoBehaviour
+public class Explosion : MonoBehaviour
 {
     public int cubesPerAxis = 8;
     public float delay = 1f;
@@ -11,11 +11,11 @@ public class Explode : MonoBehaviour
 
     void Start()
     {
-        Invoke("Main", delay);
+        //Invoke("Main", delay);
     }
 
 
-    void Main()
+    public void Main()
     {
         for (int x = 0; x < cubesPerAxis; x++)
         {
